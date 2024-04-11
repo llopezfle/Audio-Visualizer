@@ -1,0 +1,98 @@
+
+ @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg);
+    }
+  
+    100% {
+      filter: hue-rotate(-360deg);
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+  #freq {
+    background: linear-gradient(120deg, #000 7.66%, #4B2400 105.5%);
+      position: absolute; 
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  }
+  body {
+      background:#000;
+      overflow: hidden;
+  }
+  #freq.animateHue, body.animateHue {
+      animation-name: hue;
+      animation-duration: 500s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+  
+      -webkit-animation-name: hue;
+      -webkit-animation-duration: 500s;
+      -webkit-animation-delay: 1s;
+      -webkit-animation-iteration-count: infinite;
+  }
+
+  #song_info_wrapper {
+      position: absolute;
+      width: 100%;
+      text-align: center; 
+  }
+  
+  #title {
+      font-size: 10vw;
+  }
+  
+
+  
+  input, button, #loading {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      display: flex;
+      z-index: 999;
+      
+  }
+  
+  #playSampleButton {
+      top: 40px;
+  }
+  
+  #useMicButton {
+      top: 70px;
+  }
+  
+  #loading {
+      display: inline-block;
+      top: 44px; 
+      left: 110px;
+      font-family: "Roboto", sans-serif; 
+      font-size: 60px;
+  }
+  
+  html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0px;
+  }
+  
+
+  
+  .logo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    width: 30%;
+    height: auto;
+  }
+  .logo_img{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    margin-left: 40%;
+    width: 12%;
+    height: auto;
+
+  }
